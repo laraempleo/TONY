@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>function acceso(){
+    
+        var usuario = document.getElementById("usuario").value;
+        var contrasena =document.getElementById("contrasena").value;
+    
+        if(usuario=="" || contrasena=="") {
+            document.getElementById("usuario").style.border="2px solid red";
+           document.getElementById("contrasena").style.border="2px solid red";
+        }
+        
+        if (usuario!="")
+        { document.getElementById("usuario").style.border="";
+            
+    }
+     if (contrasena!=""){
+           document.getElementById("contrasena").style.border="";
+    }
+    
+    
+        if (usuario === "123" && contrasena === "123") {
+        alert("Su cuenta es correcta");
+        window.location.href = "file:///C:/Users/Usuario/Desktop/TonyLara.unidad%201/webtrabajo.html";
+        }
+        
+        else {
+            alert("Cuenta incorrecta");
+         
+        }
+        
+    }
+        
+        
+    
+    
+       
+    
+       </script>
+</head>
+<body>
+    <body style="background-color:yellow;">
+    <h1> contraseña correcta=123 usuario 123, demas opciones denegadas</h1>
+    <form>
+
+        <input type="text" id="usuario">
+        <br><br>
+        <input type="password" id="contrasena">
+        <br><br>
+        <input type="button" value="Acceder" id="boton" onclick="acceso()">    
+    </form> 
+           <center> <img alt src="512x512usuariocontra%20image.jpg" style="width:600px;height:500px;"> </center>
+</body>
+</html>
